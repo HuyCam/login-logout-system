@@ -15,11 +15,11 @@ In the config folder, there is a JWT_SECRET=somekey. You should change this key 
 
 ## End point
 Register a user\
-POST /users/register
+POST /users/register\
 Login a user\
 POST /users/login\
 Get user profile\
 GET /users/me\
 Log out and log out all\
 POST /users/logout\
-POST /users/logout-all
+POST /users/logout-all\
