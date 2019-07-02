@@ -1,7 +1,8 @@
 # login-logout-system
 ## Prerequisites to run this app:
+* install Nodejs on your machine.
 * install your nodemon or change dev script command in package.json to only use "node" instead of nodemon
-* install Nodejs npm on your machine.
+
 
 To run this app: 
 1. clone it to your computer. 
