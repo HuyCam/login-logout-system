@@ -22,4 +22,4 @@ Get user profile\
 GET /users/me\
 Log out and log out all\
 POST /users/logout\
-POST /users/logout-all\
+POST /users/logout-all
