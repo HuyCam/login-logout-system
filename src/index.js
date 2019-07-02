@@ -3,6 +3,9 @@ const cors = require('cors');
 require('./db/db');
 const app = express();
 
+// middlewares
+const auth = require('./middlewares/auth');
+
 // allow cross-origin
 app.use(cors());
 
@@ -37,6 +40,10 @@ app.post('/users/login', async (req, res) => {
     } catch(e) {
         res.status(400).send(e)
     }
+})
+
+app.get('/users/me', auth, async(req, res) => {
+    res.send({ user: req.user })
 })
 
 app.listen(port, () => {
