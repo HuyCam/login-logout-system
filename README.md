@@ -3,7 +3,7 @@
 * install your nodemon or change dev script command in package.json to only use "node" instead of nodemon
 * install Nodejs npm on your machine.
 
-To run this app:\ 
+To run this app: 
 1. clone it to your computer. 
 1. Use command line to go into that folder. 
 1. Install all required packages by **npm i** 
