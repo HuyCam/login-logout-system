@@ -1,4 +1,8 @@
 # login-logout-system
+## Prerequisite to run this app:
+* install your nodemon or change dev script command in package.json to only use "node" instead of nodemon
+* install Nodejs npm on your machine.
+
 To run this app, clone it to your computer. Use command line to go into that folder. Run this command to start app as a development mode:\
 **npm run dev**
 ## Warning before run deploy this app
