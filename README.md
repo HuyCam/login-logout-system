@@ -11,3 +11,15 @@ To run this app:
 1. Run this command to start the app in development mode: **npm run dev**
 ## Warning before deploy this app
 In the config folder, there is a JWT_SECRET=somekey. You should change this key when you set it up environment variable on the server.
+
+
+## End point
+Register a user\
+POST /users/register
+Login a user\
+POST /users/login\
+Get user profile\
+GET /users/me\
+Log out and log out all\
+POST /users/logout\
+POST /users/logout-all
