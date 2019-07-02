@@ -29,6 +29,16 @@ app.post('/users/register', async (req, res) => {
     }
 })
 
+app.post('/users/login', async (req, res) => {
+    try {
+        const user = await User.findByCredentials(req.body.email, req.body.password);
+        const token = await user.generateToken();
+        res.send({ user, token });
+    } catch(e) {
+        res.status(400).send(e)
+    }
+})
+
 app.listen(port, () => {
     console.log('server is live');
 })
